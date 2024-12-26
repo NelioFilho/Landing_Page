@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>Nélio Filho</title>
+
+    <script src="int.js"></script>
+</head>
+<body>
+    <header>
+        <!--Links Inicio / Sobre / Projetos / Contato-->
+        <nav class="links_sup">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Projeto">Projetos</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+    </header>
+    
+    <!--Apresentação e Sobre mim-->
+    <section id="Inicio">
+        <div class="Apresent">
+            <h3>Olá, visitante!</h3>
+            <h1>Meu nome é Nélio Filho</h1>
+            <h3>Desenvolvedor Front-end</h3>
+
+            <a href="https://www.linkedin.com/in/nelio-filho/"> <img src="Imagens/linkedin.png" class="Sociais"></a>
+            <a href="https://github.com/NelioFilho"><img src="Imagens/github.png" class="Sociais"></a>
+            <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br"><img src="Imagens/insta.png" class="Sociais"></a>
+        </div>
+    </section>
+    
+    <section id="Sobre">
+        <div>
+            <h3 class="Sobre-titulo">Quem sou eu?</h3>
+            <div  class="Sobre-desc">
+                <p>Desenvolvedor Front-End Júnior focado na criação de landing pages para qualquer nicho. Utilizando <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b> para desenvolver páginas funcionais e atrativas, sempre priorizando a experiência do usuário.</p>
+            </div>
+        </div>
+
+        <!--Linguagens-->
+        <div class="lingContainer">
+            <div class="item">
+                <img class="Ling" src="Imagens/html.png"> 
+                <p class="text">HTML</p>
+            </div>
+
+            <div class="item">
+                <img class="Ling" src="Imagens/css.png"> 
+                <p class="text">CSS</p>
+            </div>
+
+            <div class="item">
+                <img class="Ling" src="Imagens/javascript.png"> 
+                <p class="text">Javascript</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Projetos-->
+    <section id="Projeto">
+        <div class="swiper">
+            <div class="swiper-wrapper">   
+                <div class="projetContainer">
+                    <h2>Meus Projetos</h2>
+                    
+                    <div  class="projetoContainer">
+                        <div class="Thumb">
+                            <img src="Imagens/img.jpg">
+                        </div>
+                        <div class="">
+                            <h3 class="Titulo">Título</h3>
+                            <p class="TextProjeto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida ullamcorper metus volutpat rutrum. Morbi lectus metus, tincidunt hendrerit magna at, malesuada rutrum elit. Nulla sem nisi, semper quis nisl ac, varius venenatis justo. Ut tincidunt arcu ac nisl venenatis congue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!--Contato-->
+    <section id="Contato">
+        <div class="Contato">
+            <h2>Contato</h2>
+            <div>
+                WhatsApp: (62)00000-0000 <br>
+                E-mail: neliofilhodg@outlook.com<br>
+                Github: <a href="https://github.com/NelioFilho">github.com/NelioFilho</a><br>
+                Linkedin: <a href="https://www.linkedin.com/in/nelio-filho/">linkedin.com/in/nelio-filho/</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+</body>
+
+<footer class="Rodape">
+    <div  class="link_inf">
+        <a href="https://www.linkedin.com/in/nelio-filho/"><img src="Imagens/linkedin.png" class="Sociais"></a>
+        <a href="https://github.com/NelioFilho"><img src="Imagens/github.png" class="Sociais"></a> 
+    </div>
+    
+    <div>
+        Todos os direitos reservados PARA EU
+    </div>
+    
+</footer>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nélio Filho</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="navbar__link">Início</a>
+            <a href="#sobre" class="navbar__link">Sobre</a>
+            <a href="#projeto" class="navbar__link">Projetos</a>
+            <a href="#contato" class="navbar__link">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Apresentação --
+        <section id="inicio" class="section section--intro">
+            <div class="intro__content">
+                <h3>Olá, visitante!</h3>
+                <h1>Meu nome é Nélio</h1>
+                <h3>Desenvolvedor Front-end</h3>
+            </div>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/nelio-filho/" title="LinkedIn" class="social__link">
+                    <img src="Imagens/linkedin.png" alt="LinkedIn" class="social__icon">
+                </a>
+                <a href="https://github.com/NelioFilho" title="GitHub" class="social__link">
+                    <img src="Imagens/github.png" alt="GitHub" class="social__icon">
+                </a>
+                <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br" title="Instagram" class="social__link">
+                    <img src="Imagens/insta.png" alt="Instagram" class="social__icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre --
+        <section id="sobre" class="section section--about">
+            <h3>Quem sou eu?</h3>
+            <div class="about__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida ullamcorper metus volutpat rutrum. Morbi lectus metus, tincidunt hendrerit magna at, malesuada rutrum elit. Nulla sem nisi, semper quis nisl ac, varius venenatis justo. Ut tincidunt arcu ac nisl venenatis congue.</p>
+            </div>
+
+            <div class="skills">
+                <div class="skills__item">
+                    <img src="Imagens/html.png" alt="HTML" class="skills__icon">
+                    <p class="skills__text">HTML</p>
+                </div>
+                <div class="skills__item">
+                    <img src="Imagens/css.png" alt="CSS" class="skills__icon">
+                    <p class="skills__text">CSS</p>
+                </div>
+                <div class="skills__item">
+                    <img src="Imagens/javascript.png" alt="JavaScript" class="skills__icon">
+                    <p class="skills__text">JavaScript</p>
+                </div>
+                <div class="skills__item">
+                    <img src="Imagens/java.png" alt="Java" class="skills__icon">
+                    <p class="skills__text">Java</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos --
+        <section id="projeto" class="section section--projects">
+            <h2>Meus Projetos</h2>
+            <div class="projects__list">
+                <div class="projects__item">
+                    <img src="Imagens/img.jpg" alt="Projeto" class="projects__thumbnail">
+                    <div class="projects__details">
+                        <h3 class="projects__title">Título</h3>
+                        <p class="projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida ullamcorper metus volutpat rutrum. Morbi lectus metus, tincidunt hendrerit magna at, malesuada rutrum elit. Nulla sem nisi, semper quis nisl ac, varius venenatis justo. Ut tincidunt arcu ac nisl venenatis congue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato --
+        <section id="contato" class="section section--contact">
+            <h2>Contato</h2>
+            <div class="contact__details">
+                <p>WhatsApp: (62) 00000-0000</p>
+                <p>E-mail: <a href="mailto:neliofilhodg@outlook.com">neliofilhodg@outlook.com</a></p>
+                <p>GitHub: <a href="https://github.com/NelioFilho">github.com/NelioFilho</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/nelio-filho/">linkedin.com/in/nelio-filho/</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/nelio-filho/" class="footer__link">
+                <img src="Imagens/linkedin.png" alt="LinkedIn" class="footer__icon">
+            </a>
+            <a href="https://github.com/NelioFilho" class="footer__link">
+                <img src="Imagens/github.png" alt="GitHub" class="footer__icon">
+            </a>
+        </div>
+        <p class="footer__text">Todos os direitos reservados PARA EU</p>
+    </footer>
+</body>
+</html>
+-->
