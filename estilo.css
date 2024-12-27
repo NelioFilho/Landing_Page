@@ -42,7 +42,7 @@ a:hover{
     line-height: 15px;
     text-align: center;
 
-    font-size: larger;
+    font-size: 50px;
 }
 
 
@@ -179,6 +179,11 @@ footer{
 h3{
     font-weight: normal;
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 
 
 
