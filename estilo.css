@@ -143,16 +143,22 @@ a:hover{
     max-width: 300px; /* Define largura máxima para a imagem */
     height: auto; /* Mantém a proporção */
     display: block; /* Remove possíveis espaços extras ao redor da imagem */
+    border-radius: 10px;
 }
 
 /* Estilo do texto */
 .TextProjeto {
     flex: 1; /* Faz o texto ocupar o espaço restante */
     text-align: justify; /* Justifica o texto */
+    font-size: 20px;
+}
+
+.titulo-projetos{
+    font-size: 40px;
 }
 
 .Titulo{
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
     font-weight: bold;
 }

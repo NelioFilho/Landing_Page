@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
     <title>Nélio Filho</title>
@@ -28,9 +28,9 @@
             <h1>Meu nome é Nélio Filho</h1>
             <h3>Desenvolvedor Front-end</h3>
 
-            <a href="https://www.linkedin.com/in/nelio-filho/"> <img src="Imagens/linkedin.png" class="Sociais"></a>
-            <a href="https://github.com/NelioFilho"><img src="Imagens/github.png" class="Sociais"></a>
-            <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br"><img src="Imagens/insta.png" class="Sociais"></a>
+            <a href="https://www.linkedin.com/in/nelio-filho/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/NelioFilho"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </section>
     
@@ -64,78 +64,47 @@
 
 
     <!--Projetos-->
-    <section id="Projeto">
-        <div class="swiper">
-            <div class="swiper-wrapper">   
+    <article id="Projeto">
                 <div class="projetContainer">
-                    <h2>Meus Projetos</h2>
+                    <h2 class="titulo-projetos">Meus Projetos</h2>
                     
                     <div  class="projetoContainer">
                         <div class="Thumb">
-                            <img src="Imagens/img.jpg">
+                            <img src="Imagens/Calculadora.png">
                         </div>
-                        <div class="">
-                            <h3 class="Titulo">Título</h3>
-                            <p class="TextProjeto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida ullamcorper metus volutpat rutrum. Morbi lectus metus, tincidunt hendrerit magna at, malesuada rutrum elit. Nulla sem nisi, semper quis nisl ac, varius venenatis justo. Ut tincidunt arcu ac nisl venenatis congue.</p>
+                        <div>
+                            <h3 class="Titulo">Calculadora</h3>
+                            <p class="TextProjeto">Um exercício proposto em um curso que combina HTML e CSS para criar e estilizar a interface, com bastante foco no uso do JavaScript. O objetivo principal é explorar as funções do JavaScript para realizar diferentes operações matemáticas de maneira prática, dinâmica e interativa, ajudando a entender como essas tecnologias trabalham juntas para criar funcionalidades úteis.</p>
+
+                            Link github: <a href="https://github.com/NelioFilho/Calculadora.html">https://github.com/NelioFilho/Calculadora.html</a>
                         </div>
                     </div>
+
+                    <div  class="projetoContainer">
+                        <div class="Thumb">
+                            <img src="Imagens/mata_mosquito.png">
+                        </div>
+                        <div>
+                            <h3 class="Titulo">Jogo Mata Mosquito</h3>
+                            <p class="TextProjeto">Projeto final do curso onde era proposto a criação de um jogo parecido com Fruit Ninja, o objetivo era a criação de mosquitos de diferentes tamanhos e posição de forma aleatória definidas com CSS e JavaScript, também é possível definir em qual nível deseja jogar.
+                            </p>
+
+                            Link github: <a href="https://github.com/NelioFilho/Mata_Mosquito">https://github.com/NelioFilho/Calculadora.html</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>  
+    </article>  
     
     
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--Contato-->
     <section id="Contato">
         <div class="Contato">
             <h2>Contato</h2>
             <div>
-                WhatsApp: (62)00000-0000 <br>
+                WhatsApp: <a href="https://w.app/NelioFilho">(62)98595-8404</a> <br>
                 E-mail: neliofilhodg@outlook.com<br>
                 Github: <a href="https://github.com/NelioFilho">github.com/NelioFilho</a><br>
                 Linkedin: <a href="https://www.linkedin.com/in/nelio-filho/">linkedin.com/in/nelio-filho/</a>
@@ -143,18 +112,12 @@
         </div>
     </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+
 </body>
 
-<footer class="Rodape">
-    <div  class="link_inf">
-        <a href="https://www.linkedin.com/in/nelio-filho/"><img src="Imagens/linkedin.png" class="Sociais"></a>
-        <a href="https://github.com/NelioFilho"><img src="Imagens/github.png" class="Sociais"></a> 
-    </div>
-    
+<footer class="Rodape">    
     <div>
-        Todos os direitos reservados PARA EU
+        Todos os direitos reservados &copy;
     </div>
     
 </footer>
