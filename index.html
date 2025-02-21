@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Nélio Filho</title>
-
-    <script src="int.js"></script>
 </head>
 <body>
     <header>
-        <!--Links Inicio / Sobre / Projetos / Contato-->
-        <nav class="links_sup">
-            <a href="#Inicio">Inicio</a>
-            <a href="#Sobre">Sobre</a>
-            <a href="#Projeto">Projetos</a>
-            <a href="#Contato">Contato</a>
+        <nav class="menu-nav">
+            <a href="#Home">Inicio</a>
+            <a href="#About">Sobre</a>
+            <a href="#Projects">Projetos</a>
+            <a href="#Contact">Contato</a>
         </nav>
     </header>
-    
-    <!--Apresentação e Sobre mim-->
-    <section id="Inicio">
-        <div class="Apresent">
+
+
+    <section id="Home">
+        <div class="intro">
             <h3>Olá, visitante!</h3>
             <h1>Meu nome é Nélio Filho</h1>
             <h3>Desenvolvedor Front-end</h3>
 
-            <a href="https://www.linkedin.com/in/nelio-filho/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/NelioFilho"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nelio-filho/" target="_blank" class="social-media"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/NelioFilho" target="_blank" class="social-media"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/nelio_flavio/?hl=pt-br" target="_blank" class="social-media"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </section>
-    
-    <section id="Sobre">
+
+
+    <section id="About">
         <div>
             <h3 class="Sobre-titulo">Quem sou eu?</h3>
             <div  class="Sobre-desc">
@@ -42,66 +40,80 @@
             </div>
         </div>
 
-        <!--Linguagens-->
-        <div class="lingContainer">
-            <div class="item">
-                <img class="Ling" src="Imagens/html.png"> 
-                <p class="text">HTML</p>
+        
+        <div class="skills">
+            <div class="item-skill">
+                <img class="skill" src="Imagens/html.png"> 
+                <p class="text-skill">HTML</p>
             </div>
 
-            <div class="item">
-                <img class="Ling" src="Imagens/css.png"> 
-                <p class="text">CSS</p>
+            <div class="item-skill">
+                <img class="skill" src="Imagens/css.png"> 
+                <p class="text-skill">CSS</p>
             </div>
 
-            <div class="item">
-                <img class="Ling" src="Imagens/javascript.png"> 
-                <p class="text">Javascript</p>
+            <div class="item-skill">
+                <img class="skill" src="Imagens/javascript.png"> 
+                <p class="text-skill">Javascript</p>
             </div>
         </div>
 
     </section>
 
 
-    <!--Projetos-->
-    <article id="Projeto">
-                <div class="projetContainer">
-                    <h2 class="titulo-projetos">Meus Projetos</h2>
-                    
-                    <div  class="projetoContainer">
-                        <div class="Thumb">
-                            <img src="Imagens/Calculadora.png">
-                        </div>
-                        <div>
-                            <h3 class="Titulo">Calculadora</h3>
-                            <p class="TextProjeto">Um exercício proposto em um curso que combina HTML e CSS para criar e estilizar a interface, com bastante foco no uso do JavaScript. O objetivo principal é explorar as funções do JavaScript para realizar diferentes operações matemáticas de maneira prática, dinâmica e interativa, ajudando a entender como essas tecnologias trabalham juntas para criar funcionalidades úteis.</p>
+    <section id="Projects">
+        <div class="slider">
 
-                            Link github: <a href="https://github.com/NelioFilho/Calculadora.html">https://github.com/NelioFilho/Calculadora.html</a>
-                        </div>
-                    </div>
 
-                    <div  class="projetoContainer">
-                        <div class="Thumb">
-                            <img src="Imagens/mata_mosquito.png">
-                        </div>
-                        <div>
-                            <h3 class="Titulo">Jogo Mata Mosquito</h3>
-                            <p class="TextProjeto">Projeto final do curso onde era proposto a criação de um jogo parecido com Fruit Ninja, o objetivo era a criação de mosquitos de diferentes tamanhos e posição de forma aleatória definidas com CSS e JavaScript, também é possível definir em qual nível deseja jogar.
-                            </p>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
 
-                            Link github: <a href="https://github.com/NelioFilho/Mata_Mosquito">https://github.com/NelioFilho/Calculadora.html</a>
-                        </div>
-                    </div>
-
+                <div class="slide first">
+                    <h3 class="Titulo">Calculadora</h3>
+                    <img src="Imagens/Calculadora.png">
+                </div>
+    
+                <div class="slide">
+                    <h3 class="Titulo">Jogo Mata Mosquito</h3>
+                    <img src="Imagens/mata_mosquito.png">
+                </div>
+    
+                <div class="slide">
+                    <h3 class="Titulo">Projeto 3</h3>
+                    <img src="Imagens/html.png">
+                </div>
+    
+                <div class="slide">
+                    <h3 class="Titulo">Projeto 4</h3>
+                    <img src="Imagens/css.png">
                 </div>
             </div>
+    
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
         </div>
-    </article>  
-    
-    
-    <!--Contato-->
-    <section id="Contato">
-        <div class="Contato">
+        
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+    </section>
+
+
+    <section id="Contact">
+        <div class="Contact">
             <h2>Contato</h2>
             <div>
                 WhatsApp: <a href="https://w.app/NelioFilho">(62)98595-8404</a> <br>
@@ -111,16 +123,16 @@
             </div>
         </div>
     </section>
-
-
-</body>
-
-<footer class="Rodape">    
-    <div>
-        Todos os direitos reservados &copy;
-    </div>
     
-</footer>
+    
+    <footer class="footer">    
+        <div>
+            &copy; 2025 Nélio Filho - Todos os direitos reservados.
+        </div>
+        
+    </footer>
+
+<script src="script.js"></script>
+    
+</body>
 </html>
-
-
