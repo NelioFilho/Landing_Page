@@ -386,3 +386,68 @@ footer {
     align-items: center;
 
 }
+
+
+@media (max-width: 450px){
+    
+    *{
+        
+    }
+
+    #Home {
+        width: 85vw;
+        height: 90vh;
+        margin: 5px;
+        padding: 10px;
+        font-size: 34px;
+        border: solid;
+    }
+
+    .presentation{
+        width: 81vw;
+        margin: 2px auto;
+        height: 83vh;
+    }
+
+    .presentation h3 {
+        font-size: 1.4rem;
+        height: 50px;
+    }
+    
+    .presentation h1 {
+        font-size: 1.6rem;
+        height: 30vh;
+        line-height: 2rem;
+    }
+    
+    .presentation h4 {
+        font-size: 1rem;
+        height: 50px;
+    }
+    
+    .presentation h5 {
+        font-size: 1rem;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-presentation {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .btn-default {
+        margin: 15px auto;
+        background: linear-gradient(150deg, #3B80D5, #84BBFF);
+        width: 30vw;
+        height: 7vh;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        transition: 0.5s;
+    }
+}
+
+}
