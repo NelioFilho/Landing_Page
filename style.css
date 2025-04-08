@@ -6,7 +6,7 @@
         color: antiquewhite;
         font-family: "Parkinsans", sans-serif;
         font-optical-sizing: auto;
-        font-weight: weight;
+        /*font-weight: weight;*/
         font-style: normal;
         margin: 0;
         padding: 0;
@@ -33,13 +33,13 @@
 
     #Home {
         width: 90vw;
-        height: 115vh;
+        height: auto;
         margin: 5px auto;
         padding: 5px;
     }
 
     .presentation {
-        height: 75vh;
+        min-height: 75vh;
         width: 95vw;
         line-height: 15px;
         padding-top: 50px;
@@ -47,22 +47,18 @@
 
     .presentation h3 {
         font-size: 1.2rem;
-        height: auto;
         line-height: 30px;
     }
 
     .presentation h1 {
         font-size: 1.7rem;
-        height: auto;
         margin: 5px auto;
         line-height: 2.1rem;
     }
 
     .presentation h4 {
         font-size: 1.1rem;
-        height: auto;
         line-height: 1.3rem;
-        align-items: center;
     }
 
     h5 {
@@ -87,7 +83,6 @@
     .social-media i:hover {
         font-size: 40px;
         color: #2d9aff;
-        margin: 10px;
     }
 
     .btn-default {
@@ -111,14 +106,13 @@
 
     #About {
         width: 90vw;
-        height: auto;
         margin: 5px auto;
         padding: 5px;
     }
 
     .about {
         width: 90vw;
-        min-height: 133vh;
+        min-height: auto;
     }
 
     .subtitle {
@@ -128,12 +122,11 @@
     }
 
     .resume {
-        height: 105vh;
+        min-height: auto;
     }
 
     .resume-box {
         margin: 5px auto;
-        height: 60vh;
         width: 80vw;
     }
 
@@ -145,7 +138,7 @@
     }
 
     .text-about {
-        width: 76vw;
+        width: auto;
         font-size: 1rem;
     }
 
@@ -238,7 +231,7 @@
     }
 
     #Projects {
-        height: 175vh;
+        height: auto;
         width: 90vw;
         margin: 5px auto;
         padding: 5px;
@@ -389,15 +382,6 @@
         height: auto;
     }
 
-    .resume {
-        height: 105vh;
-        margin: 5px;
-    }
-
-    #About {
-        height: 290vh;
-    }
-
     .list-service{
         height: 50vh;
     }
@@ -409,13 +393,6 @@
 
 /*tablet*/
 @media (min-width: 600px){
-    #About {
-        height: 225vh;
-    }
-    
-    .about {
-        height: 140vh;
-    }
 
     .photo{
         width: 40vw;        
@@ -438,6 +415,22 @@
 /*notebooks */
 @media (min-width: 900px){
     
+    .slides{
+        margin: 5px auto;
+        height: auto;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide{
+        width: 95%;
+    }
+
+    .slide img{
+        width: 50%;
+    }
+
     #Service{
         min-height: 65vh;
     }
@@ -461,7 +454,15 @@
     }
 }
 
-@media (min-widht: 1024px){
+@media (min-width: 1100px){
+    
+    .resume{
+        display: flex;
+    }
 
+    .resume-box{
+        width: 55vw;
+        margin: 5px;
+    }
 }
 
