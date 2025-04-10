@@ -1,3 +1,7 @@
+function clicarMenu(){
+    menu.classList.toggle('ativo')
+}
+
 var web1 = document.getElementsByClassName('service')[0];
 var web2 = document.getElementsByClassName('service')[1];
 

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media (min-width: 250px){
+/*@media screen and (min-width: 250px){*/
     * {
         text-align: center;
         color: antiquewhite;
         font-family: "Parkinsans", sans-serif;
         font-optical-sizing: auto;
-        /*font-weight: weight;*/
         font-style: normal;
         margin: 0;
         padding: 0;
@@ -18,6 +17,39 @@
         text-align: center;
         width: 100%;
         margin: 0;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #menu-burguer{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 7px;
+    }
+
+    #menu{
+        display: none;
+        background: linear-gradient(150deg, #3B80D5, #84BBFF);
+    }
+
+    #menu.ativo{
+        display: block;
+    }
+
+    #menu ul{
+        list-style: none;
+    }
+
+    #menu li{
+        margin: 5px;
+        padding: 5px;
     }
 
     a {
@@ -260,12 +292,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30vw;
         height: 5vh;
-        border-radius: 10px;
+        border-radius: 3px;
         cursor: pointer;
-        font-size: 13px;
-        transition: 0.5s;
+        font-size: 0.9rem;
     }
 
     #Service {
@@ -382,10 +412,10 @@
 
     }
 
-}
+
 
 /*celular*/
-@media (min-width: 400px){
+@media screen and (min-width: 400px){
     #Home {
         height: 95vh;
     }
@@ -408,7 +438,7 @@
 }
 
 /*tablet*/
-@media (min-width: 600px){
+@media screen and (min-width: 600px){
 
     .photo{
         width: 40vw;        
@@ -429,7 +459,21 @@
 }
 
 /*notebooks */
-@media (min-width: 900px){
+@media screen and (min-width: 900px){
+    #menu-burguer{
+        display: none;
+    }
+
+    #menu{
+        display: block !important;
+    }
+
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
 
     .btn-default{
         width: 15vw;
@@ -487,7 +531,7 @@
     }
 }
 
-@media (min-width: 1100px){
+@media screen and (min-width: 1100px){
     
     .resume{
         display: flex;
